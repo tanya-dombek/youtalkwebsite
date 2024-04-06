@@ -1,0 +1,46 @@
+.breadcrumb {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 24px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.breadcrumb > ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 16px;
+    white-space: nowrap;
+}
+
+.breadcrumb__item {
+    position: relative;
+}
+
+.breadcrumb__item > a {
+    text-decoration: none;
+    color: #333333b2;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.breadcrumb__item:not(:last-child)::after {
+    content: ' ';
+    background-image: url('../../img/icons/arrow-right.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+@media screen and (min-width: 414px) {
+    .breadcrumb {
+        margin-top: 16px;
+    }
+}

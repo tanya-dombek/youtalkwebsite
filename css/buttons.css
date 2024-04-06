@@ -1,0 +1,86 @@
+.button {
+    cursor: pointer;
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    min-width: 200px;
+}
+
+.header__burger-btn {
+    cursor: pointer;
+    display: block;
+    border: none;
+    background: transparent;
+    padding: 13px 11px;
+    width: 40px;
+    height: 40px;
+}
+
+.header__button {
+    background-color: #E3F5F5;
+    color: #03B2A5;
+    display: none;
+}
+
+.header__button:hover {
+    box-shadow: 0px 0px 0px 2px inset #16C8BB;
+}
+
+.more-btn {
+    background-color: #35B3A9;
+    color: #FFFFFF;
+    border-radius: 4px;
+    align-content: center;
+}
+
+.aside-btn {
+    width: 100%;
+}
+
+.buy-btn {
+    min-width: 108px;
+}
+
+.suggestion-btn {
+    width: 238px;
+    background-color: #16C8BB;
+    height: 60px;
+}
+
+.subscription__btn {
+    display: none;
+    background-color: #16C8BB;
+    border-radius: 4px;
+    border: none;
+    height: 50px;
+    width: 64px;
+    padding: 0;
+    box-shadow: 0px 0px 0px 2px inset transparent,
+                0px 0px 0px 2px inset #9D9D9D33;
+    top: 0;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(../../img/icons/sub-btn.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 414px) {
+    .subscription__btn {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header__burger-btn {
+        display: block;
+        display: none;
+    }
+
+    .header__button {
+        display: block;
+    }
+}

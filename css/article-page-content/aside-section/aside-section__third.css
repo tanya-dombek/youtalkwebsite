@@ -1,0 +1,38 @@
+.aside-section__third {
+    background-image: url('../../../img/second-page/prerents-xs.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 228px;
+    height: 292px;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 414px) {
+    .aside-section__third {
+        background-image: url('../../../img/second-page/presents-s.svg');
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .aside-section__third {
+        background-image: url('../../../img/second-page/persents-m.svg');
+        width: 356px;
+        height: 243px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aside-section__third {
+        background-image: url('../../../img/second-page/presents-l.svg');
+        width: auto;
+        height: 292px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .aside-section__third {
+        background-image: url('../../../img/second-page/presents-xl.svg');
+    }
+}

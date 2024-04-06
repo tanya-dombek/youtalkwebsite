@@ -1,0 +1,131 @@
+.aside-section__second, .aside-section__fourth {
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #DEDEDE;
+    box-shadow: 0px 30px 50px 0px rgba(239, 245, 251, 1);
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+
+.aside-section__second > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.aside-section__second > div > img {
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.aside-section__second + h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;    
+}
+
+.aside-section__second > p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 0 4px 0;  
+}
+
+.psychologist-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #DEDEDE ;
+    margin-bottom: 8px;
+}
+
+.psychologist-info > span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #A2A7B1;
+    position: relative;
+}
+
+.psychologist-info > span:not(:first-child) {
+    padding-left: 12px;
+}
+
+.psychologist-info > span:not(:first-child)::before {
+    content: ' ';
+    width: 4px;
+    height: 4px;
+    background-image: url('../../../img/second-page/grey-ellipse.svg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.psychologist-info + h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    margin: 8px 0;
+    align-self: flex-start;
+}
+
+.aside-section__second > ul {
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.communication-options {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    border-radius: 6px;
+    padding: 3px 6px;
+    background: rgba(243, 244, 248, 0.7);
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+}
+
+.communication-options:nth-child(2) {
+    top: 34px;
+}
+
+.communication-options > span {
+    font-size: 14px;
+}
+
+@media screen and (min-width: 414px) {
+    .aside-section__second {
+        padding: 24px 62px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .aside-section__second {
+        padding: 24px 52px;
+        width: 356px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aside-section__second {
+        padding: 24px;
+        width: auto;
+    }
+}

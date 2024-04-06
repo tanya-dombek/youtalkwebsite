@@ -1,0 +1,33 @@
+.article {
+    display: grid;
+    grid-column: span 6;
+    grid-template-columns: 100%;
+    grid-template-rows: 206px 1fr;
+    grid-template-areas: 
+    'article-img'
+    'article-body';
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .article:nth-child(-n+3) {
+        grid-template-rows: 404px 1fr;
+    }
+
+    .article:nth-child(n+3) {
+        grid-template-rows: 206px 1fr;
+        grid-column: span 3;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .article:nth-child(-n+3) {
+        grid-template-rows: 206px 1fr;
+        grid-column: span 3;
+    }
+
+    .article:nth-child(n+3) {
+        grid-template-rows: 206px 1fr;
+        grid-column: span 2;
+    }
+}

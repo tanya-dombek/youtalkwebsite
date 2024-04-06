@@ -1,0 +1,22 @@
+.suggestion {
+    align-items: center;
+    justify-content: space-between;
+    padding: 72px 0;
+    border-top: 1px solid #DEDEDE;
+    margin-top: 30px;
+}
+
+.suggestion > div > h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    width: 348px;
+}
+
+.suggestion > div > p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 327px;
+    margin: 24px 0 32px 0;
+}

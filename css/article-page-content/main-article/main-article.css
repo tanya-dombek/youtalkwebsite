@@ -1,0 +1,72 @@
+.main-article {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.main-article__img {
+    object-fit: cover;
+    width: 100%;
+    margin: 8px 0;
+}
+
+.main-article__img + p {
+    color: #868686;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    letter-spacing: 0.25px;
+}
+
+.main-article__icon {
+    margin: 16px auto;
+}
+
+.main-article > h3 {
+    margin: 8px 0;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.main-article__img + h4 {
+    margin: 8px 0;
+}
+
+p {
+    margin: 8px 0;
+}
+
+.paragraph-italic {
+    background-image: url('../../../img/second-page/tansparent-backgraund.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 168px;
+    margin: 8px 0;
+}
+
+.paragraph-italic > p {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    max-width: 485px;
+}
+
+@media screen and (min-width: 414px) {
+    .main-article__icon {
+        margin: 24px auto;
+    }
+
+    .paragraph-italic {
+        margin: 16px 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main-article {
+        max-width: 700px;
+    }
+}

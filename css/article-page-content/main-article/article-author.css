@@ -1,0 +1,67 @@
+.article-author {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.article-author > span {
+    color: #494949;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.article-author > span:last-child {
+    color: #2963A3;
+}
+
+.article-author > span:not(:first-child), .filter-links > a:not(:first-child) {
+    padding-left: 10px;
+}
+
+.article-author > span:not(:first-child)::before, .filter-links > a:not(:first-child)::before {
+    content: ' ';
+    width: 2px;
+    height: 2px;
+    margin-right: 1px;
+    background-image: url('../../../img/second-page/dot.svg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.filter-links {
+    display: none;
+    margin: 2px 0;
+}
+
+.filter-links > a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #2963A3;
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .article-author {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .article-author > span:last-child {
+        display: none;
+    }
+    .filter-links {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+}

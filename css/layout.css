@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: minmax(16px, auto) minmax(288px, 1200px) minmax(16px, auto);
+    grid-template-rows: auto 1px 1fr auto;
+    grid-template-areas: 
+    '. header .'
+    'header-line header-line header-line'
+    '. content .'
+    'footer footer footer';
+}
+
+@media screen and (min-width: 1440px) {
+    .layout {
+        background-image: url('../../img/background.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 30%;
+    }
+
+    .article-layout {
+        background-image: url('../img/second-page/big-background.svg'), url('../img/second-page/article-background.svg'), url('../img/second-page/half-background.svg');
+        background-size: 241px, 120%, 90px;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: 100% 45%, 100% 95%, 100% 92%;
+
+    }
+}

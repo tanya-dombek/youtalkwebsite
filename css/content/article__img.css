@@ -1,0 +1,14 @@
+.article__img {
+    grid-area: article-img;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    width: 100%;
+    > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+}

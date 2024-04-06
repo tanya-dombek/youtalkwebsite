@@ -1,0 +1,25 @@
+.aside-img-section > img {
+    width: 100%;
+    margin: 8px 0;
+    max-height: 380px;
+    object-fit: cover;
+}
+
+.above-img-section > div > img {
+    width: 100%;
+    margin: 8px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .aside-img-section, .above-img-section {
+        display: flex;
+        gap: 16px;
+        margin: 16px 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aside-img-section, .above-img-section {
+        gap: 24px;
+    }
+}

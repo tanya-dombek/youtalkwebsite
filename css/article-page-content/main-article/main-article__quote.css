@@ -1,0 +1,23 @@
+.main-article__quote {
+    background-color: #F3F7FE;
+    background-image: url('../../../img/second-page/quote.svg');
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 8px 0;
+}
+
+.main-article__quote > blockquote {
+    font-weight: 400;
+    font-style: italic;
+    margin: 8px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .main-article__quote {
+        padding: 24px;
+        background-position: 23px 23px;
+        margin: 12px 0;
+    }
+}

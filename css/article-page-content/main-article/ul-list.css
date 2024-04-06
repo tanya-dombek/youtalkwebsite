@@ -1,0 +1,35 @@
+.ul-list {
+    list-style: disc;
+    margin-bottom: 8px;
+}
+
+h4 + ul {
+    text-decoration: underline;
+}
+
+.ul-list > li::marker {
+    color: #03B2A5;
+    font-size: 20px;
+}
+
+.ul-list__2,.ul-list__2 + li {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.ul-list__2 ul {
+    list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+    .ul-list {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .ul-list__2,.ul-list__2 + li {
+        visibility: visible;
+        max-height: none;
+    }
+}

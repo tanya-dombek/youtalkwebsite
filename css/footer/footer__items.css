@@ -1,0 +1,30 @@
+.footer__item {
+    grid-column: span 3;
+    grid-template-columns: 100%;
+    grid-template-rows: 206px 1fr;
+    display: grid;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__item:first-child {
+        grid-column: 1;
+    }
+
+    .footer__item:nth-child(2) {
+        grid-column: span 2;
+        padding-left: 65px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__item:nth-child(-n + 3) {
+        grid-column: span 1;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer__item:last-child {
+        margin-top: -67px;
+    }
+}

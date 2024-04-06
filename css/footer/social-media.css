@@ -1,0 +1,29 @@
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.social-media__form {
+    display: flex;
+    gap: 16px;
+}
+
+.social-media > img,
+.social-media__form > img {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 414px) {
+    .social-media {
+        padding-top: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .social-media {
+        gap: 40px;
+    }
+}

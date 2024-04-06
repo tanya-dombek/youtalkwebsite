@@ -1,0 +1,70 @@
+.filter {
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.filter__item, .article__filter {
+    border-radius: 24px;
+    padding: 6px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    background: #FFFFFF;
+    cursor: pointer;
+    white-space: nowrap;
+    border: none;
+    box-shadow: 0px 0px 0px 1px inset #C1C5CD;
+    position: relative;
+}
+
+.filter__item:first-child, .filter__item:nth-child(3) {
+    padding-left: 27px;
+}
+
+.filter__item:first-child::before, .filter__item:nth-child(3)::before, .article__filter::before {
+    content: ' ';
+    width: 18px;
+    height: 18px;
+    margin-right: 1px;
+    background-image: url('../../img/icons/smiling-face.svg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.article__filter {
+    background-color: #FFFFFFB3;
+    height: 32px;
+    padding-left: 27px;
+    z-index: 2;
+    position: absolute;
+    margin: 8px;
+}
+
+.article__filter:nth-child(2) {
+    top: 40px;
+}
+
+.filter__item:nth-child(3)::before, .article__filter::before {
+    background-image: url('../../img/icons/unicorn.svg');
+}
+
+.filter__item:hover {
+    box-shadow: 0px 0px 0px 2px inset #16C8BB;
+}
+
+.selected {
+    box-shadow: 0px 0px 0px 2px inset #16C8BB;
+}
+
+@media screen and (min-width: 768px) {
+    .filter {
+        flex-wrap: wrap;
+        margin-top: 32px;
+    }
+}

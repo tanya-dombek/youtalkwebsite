@@ -1,0 +1,21 @@
+.header {
+    grid-area: header;
+    height: 56px;
+}
+
+@media screen and (min-width: 414px) {
+    .header {
+        height: 72px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        height: 76px;
+    }
+}
+
+.header-line {
+    grid-area: header-line;
+    border: 1px solid #EFF5FB;
+}
